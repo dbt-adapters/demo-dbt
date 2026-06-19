@@ -1,0 +1,35 @@
+name: 'snk_demo'
+version: '1.0.0'
+config-version: 2
+
+profile: 'snk_demo'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  snk_demo:
+    +table_type: iceberg
+    +file_format: parquet
+    +on_schema_change: append_new_columns
+    +timeout: 36000
+    +target_name: "{{ target.name }}"
+    +s3_data_dir: "{{ target.s3_data_dir }}"
+    +invocation_id: "{{ invocation_id }}"
+    maximo:
+      +table_type: iceberg
+      +materialized: incremental
+      +incremental_strategy: append
+  elementary:
+    ## elementary models will be created in the schema '<your_schema>_elementary'
+    +schema: "snk_demo_artifacts"
+    ## To disable elementary for dev, uncomment this:
+    # enabled: "{{ target.name in ['prod','analytics'] }}"

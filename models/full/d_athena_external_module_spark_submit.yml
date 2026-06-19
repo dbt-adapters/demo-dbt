@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: d_athena_external_module_spark_submit
+    description: |
+      !! This doesnt work !!
+      In this model we try to use spark_properties in dbt.config 
+      to set spark.submit.pyfiles for making python modules available to spark context
+      But for Athena Spark, this doesnt work. The only way to add external modules is throuh
+      sc.addPyFile("<file_name>") where sc is spark context.
+    config:
+      enabled: false
+    columns:
+      - name: num
+        description: ''
+        data_type: bigint
+      - name: alpha
+        description: ''
+        data_type: string

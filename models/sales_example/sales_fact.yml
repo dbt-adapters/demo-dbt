@@ -1,0 +1,25 @@
+version: 2
+models:
+  - name: sales_fact
+    columns:
+      - name: id
+        description: 'This is a unique sales id'
+        data_type: int
+      - name: dispense_type
+        description: ''
+        data_type: string
+      - name: source
+        description: 'This is source provider'
+        data_type: string
+      - name: dispense_id
+        description: ''
+        data_type: int
+      - name: status
+        description: ''
+        data_type: string
+    config:
+      lf_tags_config:
+        {
+          "enabled": true,
+          "tags": { "Classification": "public"},
+        }

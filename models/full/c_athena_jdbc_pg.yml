@@ -1,0 +1,21 @@
+version: 2
+models:
+  - name: c_athena_jdbc_pg
+    columns: []
+    config:
+      pg_dev_url: "{{ env_var('DBT_PG_DEV_URL','') }}"
+      pg_dev_user: "{{ env_var('DBT_PG_DEV_USER','') }}"
+      pg_dev_pwd: "{{ env_var('DBT_PG_DEV_PWD','') }}"
+      lf_tags_config:
+        {
+          "enabled": true,
+          "tags": {"Classification": "public"},
+          "tags_columns":
+            {
+              "Classification":
+                {
+                  "restricted": ["table_catalog", "table_type"],
+                  "sensitive": ["table_schema", "table_name"],
+                },
+            },
+        }

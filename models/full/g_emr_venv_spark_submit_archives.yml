@@ -1,0 +1,7 @@
+version: 2
+models:
+  - name: g_emr_venv_spark_submit_archives
+    description: |
+      In this model we try to use spark.archives property to
+      use virtual environment with complex packages that can have binary objects
+    columns: []

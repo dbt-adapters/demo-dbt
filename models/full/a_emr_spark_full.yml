@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: a_emr_spark_full
+    columns:
+      - name: num
+        description: ''
+        data_type: bigint
+      - name: alpha
+        description: ''
+        data_type: string

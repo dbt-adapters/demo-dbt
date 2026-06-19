@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: b_athena_incremental_ref
+    columns:
+      - name: id
+        description: ''
+        data_type: int
+      - name: nm
+        description: ''
+        data_type: string
+      - name: dl_load_date
+        description: ''
+        data_type: timestamp

@@ -1,0 +1,14 @@
+
+target/
+dbt_packages/
+logs/
+.user.yml
+package-lock.yml
+
+.dev/
+.vscode/
+.venv/
+venv/
+stderr
+stdout
+models/.DS_Store

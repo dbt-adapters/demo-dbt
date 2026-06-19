@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: e_emr_external_module_spark_context
+    description: 'In this model we try to use spark context to add external py files'
+    columns:
+      - name: num
+        description: ''
+        data_type: bigint
+      - name: alpha
+        description: ''
+        data_type: string

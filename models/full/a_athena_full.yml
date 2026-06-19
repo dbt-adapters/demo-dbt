@@ -1,0 +1,7 @@
+version: 2
+models:
+  - name: a_athena_full
+    columns:
+      - name: id
+        description: ''
+        data_type: int

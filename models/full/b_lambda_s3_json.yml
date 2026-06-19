@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: b_lambda_s3_json
+    columns:
+      - name: company
+        description: ''
+        data_type: string
+      - name: departments
+        description: ''
+        data_type: array<struct<name:string,teams:array<struct<members:array<struct<id:bigint,name:string,role:string,skills:array<string>>>,name:string>>>>
+      - name: location
+        description: ''
+        data_type: string

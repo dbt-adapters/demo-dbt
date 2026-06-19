@@ -1,0 +1,983 @@
+version: 2
+models:
+  - name: c_emr_jdbc_sap
+    columns:
+      - name: mandt
+        description: ''
+        data_type: string
+      - name: vbeln
+        description: ''
+        data_type: string
+      - name: posnr
+        description: ''
+        data_type: string
+      - name: uepos
+        description: ''
+        data_type: string
+      - name: fkimg
+        description: ''
+        data_type: decimal(13,3)
+      - name: vrkme
+        description: ''
+        data_type: string
+      - name: umvkz
+        description: ''
+        data_type: decimal(5,0)
+      - name: umvkn
+        description: ''
+        data_type: decimal(5,0)
+      - name: meins
+        description: ''
+        data_type: string
+      - name: smeng
+        description: ''
+        data_type: decimal(13,3)
+      - name: fklmg
+        description: ''
+        data_type: decimal(13,3)
+      - name: lmeng
+        description: ''
+        data_type: decimal(13,3)
+      - name: ntgew
+        description: ''
+        data_type: decimal(15,3)
+      - name: brgew
+        description: ''
+        data_type: decimal(15,3)
+      - name: gewei
+        description: ''
+        data_type: string
+      - name: volum
+        description: ''
+        data_type: decimal(15,3)
+      - name: voleh
+        description: ''
+        data_type: string
+      - name: gsber
+        description: ''
+        data_type: string
+      - name: prsdt
+        description: ''
+        data_type: string
+      - name: fbuda
+        description: ''
+        data_type: string
+      - name: kursk
+        description: ''
+        data_type: decimal(9,5)
+      - name: netwr
+        description: ''
+        data_type: decimal(15,2)
+      - name: vbelv
+        description: ''
+        data_type: string
+      - name: posnv
+        description: ''
+        data_type: string
+      - name: vgbel
+        description: ''
+        data_type: string
+      - name: vgpos
+        description: ''
+        data_type: string
+      - name: vgtyp
+        description: ''
+        data_type: string
+      - name: aubel
+        description: ''
+        data_type: string
+      - name: aupos
+        description: ''
+        data_type: string
+      - name: auref
+        description: ''
+        data_type: string
+      - name: matnr
+        description: ''
+        data_type: string
+      - name: arktx
+        description: ''
+        data_type: string
+      - name: pmatn
+        description: ''
+        data_type: string
+      - name: charg
+        description: ''
+        data_type: string
+      - name: matkl
+        description: ''
+        data_type: string
+      - name: pstyv
+        description: ''
+        data_type: string
+      - name: posar
+        description: ''
+        data_type: string
+      - name: prodh
+        description: ''
+        data_type: string
+      - name: vstel
+        description: ''
+        data_type: string
+      - name: atpkz
+        description: ''
+        data_type: string
+      - name: spart
+        description: ''
+        data_type: string
+      - name: pospa
+        description: ''
+        data_type: string
+      - name: werks
+        description: ''
+        data_type: string
+      - name: aland
+        description: ''
+        data_type: string
+      - name: wkreg
+        description: ''
+        data_type: string
+      - name: wkcou
+        description: ''
+        data_type: string
+      - name: wkcty
+        description: ''
+        data_type: string
+      - name: taxm1
+        description: ''
+        data_type: string
+      - name: taxm2
+        description: ''
+        data_type: string
+      - name: taxm3
+        description: ''
+        data_type: string
+      - name: taxm4
+        description: ''
+        data_type: string
+      - name: taxm5
+        description: ''
+        data_type: string
+      - name: taxm6
+        description: ''
+        data_type: string
+      - name: taxm7
+        description: ''
+        data_type: string
+      - name: taxm8
+        description: ''
+        data_type: string
+      - name: taxm9
+        description: ''
+        data_type: string
+      - name: kowrr
+        description: ''
+        data_type: string
+      - name: prsfd
+        description: ''
+        data_type: string
+      - name: sktof
+        description: ''
+        data_type: string
+      - name: skfbp
+        description: ''
+        data_type: decimal(13,2)
+      - name: kondm
+        description: ''
+        data_type: string
+      - name: ktgrm
+        description: ''
+        data_type: string
+      - name: kostl
+        description: ''
+        data_type: string
+      - name: bonus
+        description: ''
+        data_type: string
+      - name: provg
+        description: ''
+        data_type: string
+      - name: eannr
+        description: ''
+        data_type: string
+      - name: vkgrp
+        description: ''
+        data_type: string
+      - name: vkbur
+        description: ''
+        data_type: string
+      - name: spara
+        description: ''
+        data_type: string
+      - name: shkzg
+        description: ''
+        data_type: string
+      - name: ernam
+        description: ''
+        data_type: string
+      - name: erdat
+        description: ''
+        data_type: string
+      - name: erzet
+        description: ''
+        data_type: string
+      - name: bwtar
+        description: ''
+        data_type: string
+      - name: lgort
+        description: ''
+        data_type: string
+      - name: stafo
+        description: ''
+        data_type: string
+      - name: wavwr
+        description: ''
+        data_type: decimal(13,2)
+      - name: kzwi1
+        description: ''
+        data_type: decimal(13,2)
+      - name: kzwi2
+        description: ''
+        data_type: decimal(13,2)
+      - name: kzwi3
+        description: ''
+        data_type: decimal(13,2)
+      - name: kzwi4
+        description: ''
+        data_type: decimal(13,2)
+      - name: kzwi5
+        description: ''
+        data_type: decimal(13,2)
+      - name: kzwi6
+        description: ''
+        data_type: decimal(13,2)
+      - name: stcur
+        description: ''
+        data_type: decimal(9,5)
+      - name: uvprs
+        description: ''
+        data_type: string
+      - name: uvall
+        description: ''
+        data_type: string
+      - name: ean11
+        description: ''
+        data_type: string
+      - name: prctr
+        description: ''
+        data_type: string
+      - name: kvgr1
+        description: ''
+        data_type: string
+      - name: kvgr2
+        description: ''
+        data_type: string
+      - name: kvgr3
+        description: ''
+        data_type: string
+      - name: kvgr4
+        description: ''
+        data_type: string
+      - name: kvgr5
+        description: ''
+        data_type: string
+      - name: mvgr1
+        description: ''
+        data_type: string
+      - name: mvgr2
+        description: ''
+        data_type: string
+      - name: mvgr3
+        description: ''
+        data_type: string
+      - name: mvgr4
+        description: ''
+        data_type: string
+      - name: mvgr5
+        description: ''
+        data_type: string
+      - name: matwa
+        description: ''
+        data_type: string
+      - name: bonba
+        description: ''
+        data_type: decimal(13,2)
+      - name: kokrs
+        description: ''
+        data_type: string
+      - name: paobjnr
+        description: ''
+        data_type: string
+      - name: ps_psp_pnr
+        description: ''
+        data_type: string
+      - name: aufnr
+        description: ''
+        data_type: string
+      - name: txjcd
+        description: ''
+        data_type: string
+      - name: cmpre
+        description: ''
+        data_type: decimal(11,2)
+      - name: cmpnt
+        description: ''
+        data_type: string
+      - name: cuobj
+        description: ''
+        data_type: string
+      - name: cuobj_ch
+        description: ''
+        data_type: string
+      - name: koupd
+        description: ''
+        data_type: string
+      - name: uecha
+        description: ''
+        data_type: string
+      - name: xchar
+        description: ''
+        data_type: string
+      - name: abrvw
+        description: ''
+        data_type: string
+      - name: sernr
+        description: ''
+        data_type: string
+      - name: bzirk_auft
+        description: ''
+        data_type: string
+      - name: kdgrp_auft
+        description: ''
+        data_type: string
+      - name: konda_auft
+        description: ''
+        data_type: string
+      - name: lland_auft
+        description: ''
+        data_type: string
+      - name: mprok
+        description: ''
+        data_type: string
+      - name: pltyp_auft
+        description: ''
+        data_type: string
+      - name: regio_auft
+        description: ''
+        data_type: string
+      - name: vkorg_auft
+        description: ''
+        data_type: string
+      - name: vtweg_auft
+        description: ''
+        data_type: string
+      - name: abrbg
+        description: ''
+        data_type: string
+      - name: prosa
+        description: ''
+        data_type: string
+      - name: uepvw
+        description: ''
+        data_type: string
+      - name: autyp
+        description: ''
+        data_type: string
+      - name: stadat
+        description: ''
+        data_type: string
+      - name: fplnr
+        description: ''
+        data_type: string
+      - name: fpltr
+        description: ''
+        data_type: string
+      - name: aktnr
+        description: ''
+        data_type: string
+      - name: knuma_pi
+        description: ''
+        data_type: string
+      - name: knuma_ag
+        description: ''
+        data_type: string
+      - name: mwsbp
+        description: ''
+        data_type: decimal(13,2)
+      - name: augru_auft
+        description: ''
+        data_type: string
+      - name: fareg
+        description: ''
+        data_type: string
+      - name: upmat
+        description: ''
+        data_type: string
+      - name: ukonm
+        description: ''
+        data_type: string
+      - name: cmpre_flt
+        description: ''
+        data_type: double
+      - name: abfor
+        description: ''
+        data_type: string
+      - name: abges
+        description: ''
+        data_type: double
+      - name: j_1arfz
+        description: ''
+        data_type: string
+      - name: j_1aregio
+        description: ''
+        data_type: string
+      - name: j_1agicd
+        description: ''
+        data_type: string
+      - name: j_1adtyp
+        description: ''
+        data_type: string
+      - name: j_1atxrel
+        description: ''
+        data_type: string
+      - name: j_1bcfop
+        description: ''
+        data_type: string
+      - name: j_1btaxlw1
+        description: ''
+        data_type: string
+      - name: j_1btaxlw2
+        description: ''
+        data_type: string
+      - name: j_1btxsdc
+        description: ''
+        data_type: string
+      - name: brtwr
+        description: ''
+        data_type: decimal(15,2)
+      - name: wktnr
+        description: ''
+        data_type: string
+      - name: wktps
+        description: ''
+        data_type: string
+      - name: rplnr
+        description: ''
+        data_type: string
+      - name: kursk_dat
+        description: ''
+        data_type: string
+      - name: wgru1
+        description: ''
+        data_type: string
+      - name: wgru2
+        description: ''
+        data_type: string
+      - name: kdkg1
+        description: ''
+        data_type: string
+      - name: kdkg2
+        description: ''
+        data_type: string
+      - name: kdkg3
+        description: ''
+        data_type: string
+      - name: kdkg4
+        description: ''
+        data_type: string
+      - name: kdkg5
+        description: ''
+        data_type: string
+      - name: vkaus
+        description: ''
+        data_type: string
+      - name: j_1aindxp
+        description: ''
+        data_type: string
+      - name: j_1aidatep
+        description: ''
+        data_type: string
+      - name: kzfme
+        description: ''
+        data_type: string
+      - name: mwskz
+        description: ''
+        data_type: string
+      - name: vertt
+        description: ''
+        data_type: string
+      - name: vertn
+        description: ''
+        data_type: string
+      - name: sgtxt
+        description: ''
+        data_type: string
+      - name: delco
+        description: ''
+        data_type: string
+      - name: bemot
+        description: ''
+        data_type: string
+      - name: rrrel
+        description: ''
+        data_type: string
+      - name: wminr
+        description: ''
+        data_type: string
+      - name: vgbel_ex
+        description: ''
+        data_type: string
+      - name: vgpos_ex
+        description: ''
+        data_type: string
+      - name: logsys
+        description: ''
+        data_type: string
+      - name: vgtyp_ex
+        description: ''
+        data_type: string
+      - name: j_1btaxlw3
+        description: ''
+        data_type: string
+      - name: j_1btaxlw4
+        description: ''
+        data_type: string
+      - name: j_1btaxlw5
+        description: ''
+        data_type: string
+      - name: msr_id
+        description: ''
+        data_type: string
+      - name: msr_refund_code
+        description: ''
+        data_type: string
+      - name: msr_ret_reason
+        description: ''
+        data_type: string
+      - name: nrab_knumh
+        description: ''
+        data_type: string
+      - name: nrab_value
+        description: ''
+        data_type: decimal(13,2)
+      - name: dispute_case
+        description: ''
+        data_type: binary
+      - name: fund_usage_item
+        description: ''
+        data_type: binary
+      - name: farr_reltype
+        description: ''
+        data_type: string
+      - name: claims_taxation
+        description: ''
+        data_type: string
+      - name: kurrf_dat_orig
+        description: ''
+        data_type: string
+      - name: sgt_rcat
+        description: ''
+        data_type: string
+      - name: sgt_scat
+        description: ''
+        data_type: string
+      - name: prefe
+        description: ''
+        data_type: string
+      - name: akkur
+        description: ''
+        data_type: decimal(9,5)
+      - name: waerk
+        description: ''
+        data_type: string
+      - name: draft
+        description: ''
+        data_type: string
+      - name: activedocument
+        description: ''
+        data_type: string
+      - name: grwrt
+        description: ''
+        data_type: decimal(13,2)
+      - name: fksaa
+        description: ''
+        data_type: string
+      - name: absta
+        description: ''
+        data_type: string
+      - name: abgru
+        description: ''
+        data_type: string
+      - name: mwsk1
+        description: ''
+        data_type: string
+      - name: txdat_from
+        description: ''
+        data_type: string
+      - name: pbd_id
+        description: ''
+        data_type: string
+      - name: pbd_item_id
+        description: ''
+        data_type: string
+      - name: cats_overtime_category
+        description: ''
+        data_type: string
+      - name: contr_dp_settl
+        description: ''
+        data_type: string
+      - name: prodh_univ_sales_parnt_nodid
+        description: ''
+        data_type: string
+      - name: transit_plant
+        description: ''
+        data_type: string
+      - name: vcm_chain_category
+        description: ''
+        data_type: string
+      - name: vcm_chain_uuid
+        description: ''
+        data_type: string
+      - name: reason_code
+        description: ''
+        data_type: string
+      - name: _dataaging
+        description: ''
+        data_type: string
+      - name: spe_herkl
+        description: ''
+        data_type: string
+      - name: spe_herkr
+        description: ''
+        data_type: string
+      - name: itm_comco
+        description: ''
+        data_type: string
+      - name: vtkey
+        description: ''
+        data_type: string
+      - name: vtpos
+        description: ''
+        data_type: string
+      - name: srcdoc_process_type
+        description: ''
+        data_type: string
+      - name: t2ccode_crcy_conv_factor
+        description: ''
+        data_type: decimal(31,14)
+      - name: t2cntry_crcy_conv_factor
+        description: ''
+        data_type: decimal(31,14)
+      - name: dummy_billgdocitem_incl_eew_ps
+        description: ''
+        data_type: string
+      - name: service_doc_type
+        description: ''
+        data_type: string
+      - name: service_doc_id
+        description: ''
+        data_type: string
+      - name: service_doc_item_id
+        description: ''
+        data_type: string
+      - name: solution_order_id
+        description: ''
+        data_type: string
+      - name: solution_order_item_id
+        description: ''
+        data_type: string
+      - name: /cwm/menge
+        description: ''
+        data_type: decimal(13,3)
+      - name: /cwm/meins
+        description: ''
+        data_type: string
+      - name: vbtyp_ana
+        description: ''
+        data_type: string
+      - name: fkart_ana
+        description: ''
+        data_type: string
+      - name: vkorg_ana
+        description: ''
+        data_type: string
+      - name: vtweg_ana
+        description: ''
+        data_type: string
+      - name: konda_ana
+        description: ''
+        data_type: string
+      - name: kdgrp_ana
+        description: ''
+        data_type: string
+      - name: land1_ana
+        description: ''
+        data_type: string
+      - name: regio_ana
+        description: ''
+        data_type: string
+      - name: cityc_ana
+        description: ''
+        data_type: string
+      - name: bzirk_ana
+        description: ''
+        data_type: string
+      - name: gbstk_ana
+        description: ''
+        data_type: string
+      - name: vf_status_ana
+        description: ''
+        data_type: string
+      - name: kunag_ana
+        description: ''
+        data_type: string
+      - name: kunrg_ana
+        description: ''
+        data_type: string
+      - name: fkdat_ana
+        description: ''
+        data_type: string
+      - name: bukrs_ana
+        description: ''
+        data_type: string
+      - name: counc_ana
+        description: ''
+        data_type: string
+      - name: knuma_ana
+        description: ''
+        data_type: string
+      - name: fktyp_ana
+        description: ''
+        data_type: string
+      - name: knumv_ana
+        description: ''
+        data_type: string
+      - name: sfakn_ana
+        description: ''
+        data_type: string
+      - name: kunwe_ana
+        description: ''
+        data_type: string
+      - name: kunre_ana
+        description: ''
+        data_type: string
+      - name: perve_ana
+        description: ''
+        data_type: string
+      - name: perzm_ana
+        description: ''
+        data_type: string
+      - name: glo_log_ref1_it
+        description: ''
+        data_type: string
+      - name: txs_business_transaction
+        description: ''
+        data_type: string
+      - name: txs_material_usage
+        description: ''
+        data_type: string
+      - name: txs_usage_purpose
+        description: ''
+        data_type: string
+      - name: zapcgki
+        description: ''
+        data_type: string
+      - name: apcgk_extendi
+        description: ''
+        data_type: string
+      - name: zabdati
+        description: ''
+        data_type: string
+      - name: aufpl
+        description: ''
+        data_type: string
+      - name: aplzl
+        description: ''
+        data_type: string
+      - name: dpcnr
+        description: ''
+        data_type: string
+      - name: dcpnr
+        description: ''
+        data_type: string
+      - name: dpnrb
+        description: ''
+        data_type: string
+      - name: bosfar
+        description: ''
+        data_type: string
+      - name: dp_belnr
+        description: ''
+        data_type: string
+      - name: dp_bukrs
+        description: ''
+        data_type: string
+      - name: dp_gjahr
+        description: ''
+        data_type: string
+      - name: dp_buzei
+        description: ''
+        data_type: string
+      - name: packno
+        description: ''
+        data_type: string
+      - name: perop_beg
+        description: ''
+        data_type: string
+      - name: perop_end
+        description: ''
+        data_type: string
+      - name: fmfgus_key
+        description: ''
+        data_type: string
+      - name: fsh_season_year
+        description: ''
+        data_type: string
+      - name: fsh_season
+        description: ''
+        data_type: string
+      - name: fsh_collection
+        description: ''
+        data_type: string
+      - name: fsh_theme
+        description: ''
+        data_type: string
+      - name: fonds
+        description: ''
+        data_type: string
+      - name: fistl
+        description: ''
+        data_type: string
+      - name: fkber
+        description: ''
+        data_type: string
+      - name: grant_nbr
+        description: ''
+        data_type: string
+      - name: budget_pd
+        description: ''
+        data_type: string
+      - name: j_3gbelnri
+        description: ''
+        data_type: string
+      - name: j_3gpmaufe
+        description: ''
+        data_type: string
+      - name: j_3gpmaufv
+        description: ''
+        data_type: string
+      - name: j_3getypa
+        description: ''
+        data_type: string
+      - name: j_3getype
+        description: ''
+        data_type: string
+      - name: j_3gorgueb
+        description: ''
+        data_type: string
+      - name: prs_work_period
+        description: ''
+        data_type: string
+      - name: pprctr
+        description: ''
+        data_type: string
+      - name: pargb
+        description: ''
+        data_type: string
+      - name: aufpl_oaa
+        description: ''
+        data_type: string
+      - name: aplzl_oaa
+        description: ''
+        data_type: string
+      - name: campaign
+        description: ''
+        data_type: binary
+      - name: compreas
+        description: ''
+        data_type: string
+      - name: wrf_charstc1
+        description: ''
+        data_type: string
+      - name: wrf_charstc2
+        description: ''
+        data_type: string
+      - name: wrf_charstc3
+        description: ''
+        data_type: string
+      - name: batch_billing_variant
+        description: ''
+        data_type: string
+      - name: /tspss/ws_depcd
+        description: ''
+        data_type: string
+      - name: /tspss/trade_type
+        description: ''
+        data_type: string
+      - name: /tspss/col_mon
+        description: ''
+        data_type: string
+      - name: /tspss/jd_matnr
+        description: ''
+        data_type: string
+      - name: /tspss/jd_mattxt
+        description: ''
+        data_type: string
+      - name: /tspss/bio_type
+        description: ''
+        data_type: string
+      - name: /tspss/bill_acc
+        description: ''
+        data_type: string
+      - name: /tspss/batch_num
+        description: ''
+        data_type: string
+      - name: /tspss/po_date
+        description: ''
+        data_type: string
+      - name: /tspss/po_num
+        description: ''
+        data_type: string
+      - name: /tspss/eql_type
+        description: ''
+        data_type: string
+      - name: /tspss/custpo_type
+        description: ''
+        data_type: string
+      - name: /tspss/jd_shipto
+        description: ''
+        data_type: string
+      - name: /tspss/direct_rmks
+        description: ''
+        data_type: string
+      - name: /tspss/item_rmks
+        description: ''
+        data_type: string
+      - name: /tspss/jd_jan
+        description: ''
+        data_type: string
+      - name: /tspss/val_flag
+        description: ''
+        data_type: string
+      - name: /tspss/val_date
+        description: ''
+        data_type: string
+      - name: /tspss/val_form
+        description: ''
+        data_type: string
+      - name: /tspss/option
+        description: ''
+        data_type: string
+      - name: /tspss/option2
+        description: ''
+        data_type: string
+      - name: /tspss/shikirino
+        description: ''
+        data_type: string
+      - name: /tspss/shikiriln
+        description: ''
+        data_type: string
+    config:
+      sh_dev_url: "{{ env_var('DBT_ENV_SNK_SH_DEV_URL','') }}"
+      sh_dev_user: "{{ env_var('DBT_ENV_SNK_SH_DEV_USER','') }}"
+      sh_dev_password: "{{ env_var('DBT_ENV_SNK_SH_DEV_PASSWORD','') }}"

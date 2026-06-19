@@ -1,0 +1,23 @@
+version: 2
+models:
+  - name: d_emr_yaml_env_var_config
+    description: |
+      In this model we try setting spark_properties in yaml config and not dbt.config
+      This is needed when you have to dynamically set values based on environment 
+      which is not possible through dbt.config which only accepts string or numeric literals
+    config:
+      spark_properties: |
+        {
+          "spark.executor.cores": "1",
+          "spark.executor.memory": "1g",
+          "spark.driver.cores": "1",
+          "spark.driver.memory": "1g",
+          "spark.submit.pyFiles": "{{ env_var('DEV_BUCKET_LIB','') }}/pymodules/file1.py,{{ env_var('DEV_BUCKET_LIB','') }}/pymodules/file2.py"
+        }
+    columns:
+      - name: num
+        description: ''
+        data_type: bigint
+      - name: alpha
+        description: ''
+        data_type: string

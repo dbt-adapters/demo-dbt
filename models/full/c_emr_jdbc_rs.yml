@@ -1,0 +1,7 @@
+version: 2
+models:
+  - name: c_emr_jdbc_rs
+    columns: []
+    config:
+      rs_dev_user: "{{ env_var('DBT_ENV_SNK_PG_DEV_USER','') }}"      
+      rs_dev_password: "{{ env_var('DBT_ENV_SNK_PG_DEV_PASSWORD','') }}"   

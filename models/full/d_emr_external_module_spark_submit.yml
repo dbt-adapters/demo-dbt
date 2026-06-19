@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: d_emr_external_module_spark_submit
+    description: |
+      In this model we try to use spark_properties in dbt.config 
+      to set spark.submit.pyfiles for making python modules available to spark context
+    columns:
+      - name: num
+        description: ''
+        data_type: bigint
+      - name: alpha
+        description: ''
+        data_type: string

@@ -1,0 +1,19 @@
+version: 2
+models:
+  - name: b_athena_s3_csv
+    columns:
+      - name: id
+        description: ''
+        data_type: int
+      - name: name
+        description: ''
+        data_type: string
+      - name: date
+        description: ''
+        data_type: string
+      - name: amount
+        description: ''
+        data_type: double
+      - name: category
+        description: ''
+        data_type: string

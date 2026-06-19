@@ -1,0 +1,9 @@
+version: 2
+models:
+  - name: walgreens_dispense_stg
+    config:
+      lf_tags_config:
+        {
+          "enabled": true,
+          "tags": { "Classification": "restricted"},
+        }

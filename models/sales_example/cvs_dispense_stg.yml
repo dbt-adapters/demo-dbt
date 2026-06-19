@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: cvs_dispense_stg
+    description: This table contains daily sales data from CVS pharmacy
+    tags: ["daily"]
+    columns:
+      - name: id
+        description: This is a unique sales id
+        tests:
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+
+        data_type: int
+      - name: dispense_type
+        description: ''
+        data_type: string
+      - name: source
+        description: This is source provider
+        tests:
+          - not_null:
+              config:
+                severity: warn
+        data_type: string
+    tests:
+      - iceberg_append_variance:
+          config:
+            warn_if: "> 5"
+            error_if: "> 10"
+    config:
+      lf_tags_config:
+        {
+          "enabled": true,
+          "tags": { "Classification": "sensitive"},
+        }
+

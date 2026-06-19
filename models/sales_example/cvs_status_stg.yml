@@ -1,0 +1,24 @@
+version: 2
+models:
+  - name: cvs_status_stg
+    columns:
+      - name: dispense_id
+        description: ''
+        data_type: int
+      - name: status
+        description: ''
+        data_type: string
+    config:
+      lf_tags_config:
+        {
+          "enabled": true,
+          "tags": { "Classification": "public"},
+          "tags_columns":
+            {
+              "Classification":
+                {
+                  "restricted": ["status"],
+                  "sensitive": ["status_date"],
+                },
+            },
+        }

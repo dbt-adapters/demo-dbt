@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: e_athena_external_module_spark_context
+    columns:
+      - name: num
+        description: ''
+        data_type: bigint
+      - name: alpha
+        description: ''
+        data_type: string
